@@ -19,3 +19,9 @@ console.log(doSum("stsfsdf", 40));
 
 let test = 10;
 // console.log(typeof test);
+
+let num = 10;
+for (num; num >= 0; num--) {
+  console.log(num);
+  continue;
+}

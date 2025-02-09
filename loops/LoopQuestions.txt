@@ -1,0 +1,21 @@
+1. What is loop ? 
+=> Doing something similar  repeadly for several times. Like writing your name for 10times is called a loop.
+
+2.When to use loop in programing? 
+=> In pragraming there is a common advise from the senior that they say don't repeat your code. and something we have to repeat our code for several times. And to do that we have to use loops. It will autometically solve the problem of repeating code. 
+
+3. What is the syntax of for loop? 
+=> for(variable; condition; increment++/decrement--){
+    // code body
+}
+Here as an initial value we have to delare a variable or use a varaible in the for loop and then we cheek a condition if the condition is true then the code that has on you { } breakets will exhicute and then it will increment / decrement then again it will check the condition and exhicute the code in the body and it will do this until the condition is true. When the condition becames true it imediately stop the loop.
+
+4. How to get more control of a loop ? 
+=> To get more control of a loop we have break and continue keyword. 
+Break --> allow us to imediately break the loop, When looping sometimes we just want to loop for a fixed times or when we get our desire output or result we want to stop the loop. Here comes the need of break it allows us to perform a condition when the loop should break means when it should stop.
+Continue --> Continue imediately skips the iteration. unlike Break continue also check with condition if the condition is true then it will skip that iteration.
+
+5. While loops syntax and it works ? 
+=> while (condition){
+    //code body
+}
