@@ -78,3 +78,45 @@ const checkVowelCount = (str) => {
 };
 
 // console.log(checkVowelCount(try2));
+
+// takes a string with symbol and do sum of the all numbers in it witout the symbol
+let str2 = "$469";
+
+const char = str2.split("");
+// console.log(char);
+let result = 0;
+for (let i = 0; i < char.length; i++) {
+  const num = Number(char[i]);
+  if (num) {
+    result += num;
+  }
+}
+
+// console.log(result);
+
+let str3 = "lightweight and durable backpack";
+// output = backpack durable and lightweight;
+
+const stringArr = str3.split(" ");
+const reverseStingWords = (string) => {
+  return string.split(" ").reverse().join(" ");
+};
+
+// console.log(reverseStingWords(str3));
+
+let words = str3.split(" ");
+// console.log(words);
+let reverseStr = "";
+for (let word of words) {
+  reverseStr = word + " " + reverseStr;
+}
+// console.log(reverseStr);
+let wordsreversed = "";
+for (let i = stringArr.length - 1; i >= 0; i--) {
+  console.log(stringArr[i]);
+  wordsreversed = wordsreversed + stringArr[i];
+  if (i > 0) {
+    wordsreversed += " ";
+  }
+}
+console.log(wordsreversed);

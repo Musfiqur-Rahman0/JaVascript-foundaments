@@ -27,11 +27,47 @@ let test = 10;
 // }
 
 // Write a program that prints all prime numbers between 1 and 50 using a loop.
-const primeNum = (num) => {};
+const primeNum = (num) => {
+  if (num < 2) {
+    return false;
+  }
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+};
 
-let num = 50;
-for (let i = 1; i < 50; i++) {
-  if (i > 1 && i % 1 < 0 && i % i < 1) {
-    console.log(i);
+let prime = [];
+for (let i = 2; i <= 50; i++) {
+  if (primeNum(i)) {
+    prime.push(i);
   }
 }
+
+// console.log(Math.sqrt(49));
+
+const isPrime = (n) => {
+  if (n < 2) {
+    return false;
+  }
+  for (let i = 2; i <= n - 1; i++) {
+    if (n % i === 0) {
+      return false;
+    }
+  }
+  return `${n} is a prime number`;
+};
+
+const test2 = [];
+for (let i = 1; i <= 50; i++) {
+  if (isPrime(i)) {
+    test2.push(i);
+  }
+}
+console.log(test2);
+
+// console.log(Math.sqrt(7));
+
+// generate random passwords with mutiple letter symbol number etc.
