@@ -1,41 +1,25 @@
-Question and Answer 
-1.What is string and When to use string? 
-=> String is a  type  of data in pragraming / it is a sequence of characters that represent text in programing. It can contains letters, numbers, symbol and spaces. When you have to store or manupulate text based data use string.
+1.Why We use objects ? 
+=> In javascript everything is a object in genaral. In object we can store values in a key value pair. This helps us to perform varity of modification. Objects allows us to group multiple values in a single entity. Objects also allows us to store functions that allows us to boudle data with different behaviour etc.
 
-2.What is the difference between string and array ? 
-=>The main difference is that a string is a sequence of characters but an array is a collection of multiple value it can be objects, string, numbers, boolean etc.
-String is a primitive data type and it is immutable  data type But array can contains different data types. 
+2.What is method ?
+=> Method are function in a object.
 
-3. When to use String .
-=> To store or manupulate text.
-=> searching slicing or formating words/sentence.
-=> kepping data in a fixed format.
+3.How to create and access objects in multiple ways ? 
+=> There are multiple ways to define a object in javascript. there are :-
+const obj = {} //this is a empty object;
+const obj1 = {
+    name : 'Your name",
+    age : 'Your age"
+} // this is a object with two properties.
 
-4. When to use array. 
- => To store multiple value 
- => To perform some operation like delete add modify dynamically.
- => when to manage a list of data . 
 
-5.What is mutable and immutable ? 
-=> Smiply mutable means a value that can be modified. and immutable is the opposite of it like it can not be modified. In js array is -> mutable 
-but String is immutable. It means you can't modify string after creation.
+4. How to update values in objects ? 
+=> You can use dot notation and breaket notation to update a value in object 
+dot notation -> objName.propName = "changed value"
+breaket notation -> objName['propName'] = "changed value";
 
-6.Can i use All array method in string? 
-=> No you can't because though there are a lot of similar method for string and array. But there is some that are only for array and some are only for string.
-like toUppercase, tolowercase, split() is for string and map, filter, reduce is for array.
+5.When to use dot notation and breaket notation? 
+=>We will used dot notation mostly but sometimes when the property name has two words in it then we have to use breaket notation do get the value of the property. like this objName['Prop Name'] ;
 
-7. Array method that do not work on string .
-= join(), shift(), unshift(), pop(), push(), reverse(), sort(), splice();
-
-8.What is primitive and what is non-primitive ? 
-=> In programing data types are classified into primitive and non-primitive by their behaviour and how they stored in the memory.
-Primitive -> Primitive data types stored directly in the memory. And they can't be mutable.(can't be changes directly);
-like : 
-let name = 'romin'
-name[0]= "T" // this is not possilble
-
-Non-primitive -> Non-primitive data types stored as a reference to the memory. and they are mutable. more complex and flexible.
-
-let arr = [1, 2, 3];
-arr[2] = 20; //this is possilble.
-
+6.How to delete object poperties? 
+=> delete objName.propName;

@@ -7,3 +7,4 @@ let obj = {
 for (let o in obj) {
   console.log(`key : ${obj[o]} | type ${typeof obj[o]}`);
 }
+obj.name = "jon";
