@@ -57,7 +57,7 @@ const isPrime = (n) => {
       return false;
     }
   }
-  return `${n} is a prime number`;
+  return true;
 };
 
 const test2 = [];
