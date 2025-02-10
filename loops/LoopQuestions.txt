@@ -17,5 +17,7 @@ Continue --> Continue imediately skips the iteration. unlike Break continue also
 
 5. While loops syntax and it works ? 
 => while (condition){
+    increment/decrement;
     //code body
 }
+while loops check a condition first then it exhicute the code in the body.

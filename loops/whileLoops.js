@@ -75,7 +75,6 @@ while (number <= 10) {
 }
 
 // this return all the multiplication table from 1 to 10;
-
 let num2 = 1;
 while (num2 <= 10) {
   let n = num2;
