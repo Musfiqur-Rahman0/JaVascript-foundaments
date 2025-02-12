@@ -1,0 +1,46 @@
+1. What is the difference between spread operator and rest operator.
+=> Spread-Operator : You can use spread operator with three dot (...) on  array and objects. They make a copy of the original array or object and spread it with a new object or Array. Example :
+let arr = [1, 2, 3];
+let newArr = [...arr, 4,5,6];
+let obj ={name : 'monster', age: 400};
+let newObj = {...obj, power: "ultimate"}
+
+=> Rest-Operator : You can use rest operator in  functions to get the parameters dynamically.Example : 
+const myfunc = (...args)=> {
+}
+myfunc(1, 2, 3, 4,5);
+
+here you will get all the parameters as a array on the args. and you can use this data or manupulate them by using loops or array method . 
+
+2.How to destractures with rest operators.
+=> Destracting is a new features in ES6 that can be use on objects and arrays. Example:- 
+let arr = [1, 2, 3, 4];
+const/let/var(X) [  ] = arr(arrayName)
+Here you can name anything what you want to but use releted words that this will follow the element of the like like if you the first value of the array name first then you can access by dealaring the name only and so on. like in my case
+const [first] = arr; 
+console.log(first) this will only print the 1st element of the arr.
+const [first, thrid] = arr;
+console.log(thrid) = this will print    the 2nd element of the arr. and so on.
+
+// using spread operator in array destracturing.
+const [first, thrid, ...rest];
+console.log(rest); this will print rest of the element in a array without the 1st and the 2nd.
+
+// destracturing objects properties.
+let obj = {
+    name : 'toufiq',
+    age: 2.5,
+    isStudent: false,
+    isCute: true,
+}
+const {name, age} = obj (objectName);
+here you have to dealare the name of the variables as the name of the properties. Unless this destracturing won't work.
+
+//using spread operator in object destracturing.
+const {name, ...rest} = obj;
+console.log(rest) this will print out all the object properties and values without the name.
+
+
+
+
+

@@ -1,15 +1,4 @@
-1.Why We use objects ? 
-=> 
-2.What is method ? 
-=> 
-3.How to create and access objects in multiple ways ? 
-=> 
-4. How to update values in objects ? 
-=> 
-5.When to use dot notation and breaket notation? 
-=> 
-6.How to delete object poperties? 
-=> 
+
 
 Question and Answer 
 1.What is string and When to use string? 
