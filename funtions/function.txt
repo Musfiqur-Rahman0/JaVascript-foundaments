@@ -1,0 +1,32 @@
+1. What is a function . 
+=> A function is a block of code that will perform some action when They are called.
+
+2. What is the advantage of using function?
+=> Function is more readalbe and it allows us to avoid dublications. Also we can perform a action several times by calling the functions.
+
+3. What is the difference between a parameter and an argument?
+=> The main difference between a parameter and an argument is a argument is a input That can be taken  when the function is calling. And a parameter is the argument that recived by the function as a placeholder when declaring.
+
+4.What is a return statement in a function?
+=> A return statement in function give you something back after performing some operation through the function  body. and it Ends the functions imediatly when the operation recived the return statement.
+
+5.What is the difference between a function declaration and a function expression? 
+=> The main difference between a function declaration and a function expression lies in their action how they behaves with hoisting and how they are declared.
+Function declaration -> When you define a function with function keyword and it has a name is called function declaration and it can be called before declaration. Because a function declared with function keyword allows hoisting.
+Function expression -> When you assing a function to a variable is called function expression. A function expression are not hoisted. Meaning that you can't called the function before defination.
+
+*** function declaration must have a name and function expression can be anonymous. ***
+5. How does function scope work in JavaScript?
+=>When you declare a variable on a function it is only accesible within the function. That is called a function scope. And outsite that function you will get  a referance error.
+
+*** If a variable is declared without let, const, or var inside a function, it becomes a global variable (not recommended).***
+
+6. What is a callback function? How is it used?
+=> A callback function is a function that is defined as a parameter in a function. A callback function mostly used for asyncrous performing like making api request, handling events etc.
+
+7.What is the difference between a named function and an anonymous function?
+=> Named function -> A function that has a name called named function. You can call the function anytime by it name.
+Anonymous function -> A function that has no name often pass as a function argument or imediatly invoked function is called anonymous functions. it will imediatly run after the declaration. 
+
+8.What is a pure function? Why is it useful?
+=>A pure function is a function that allways gives the same output for the smae input. It doesn't depend on any external state or variable.  

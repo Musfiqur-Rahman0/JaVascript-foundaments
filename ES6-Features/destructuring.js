@@ -8,7 +8,7 @@ const Obj = {
 
 // // const name = Obj.name;
 // console.log(name);
-
+// spread on objects.
 const { name, age, isStudent, profession } = Obj;
 console.log(name);
 console.log(isStudent);
