@@ -227,5 +227,280 @@ function isAnagram(str1, str2) {
   return str1.split("").sort().join("") === str2.split("").sort().join("");
 }
 
-console.log(isAnagram("listen", "silent")); // Output: true
-console.log(isAnagram("hello ", "world ")); // Output: false
+// console.log(isAnagram("listen", "silent")); // Output: true
+// console.log(isAnagram("hello ", "world ")); // Output: false
+
+// video practise.
+const mileToKilo = (mile) => {
+  const result = mile * 1.609344;
+  return `${mile} mile is ${result.toFixed(2)} kilometers`;
+};
+// console.log(mileToKilo(10));
+
+// check leap year
+const isLeapYear = (year) => {
+  let massage = `${year} is a leap year.`;
+  if (year % 4 === 0 && year % 100 !== 0) {
+    return massage;
+  } else if (year % 100 === 0 && year % 400 === 0) {
+    return massage;
+  }
+  return `${year} is not a leap year!`;
+};
+// console.log(isLeapYear(1900));
+
+// return the avg of the even number
+const evenAvg = (numbers) => {
+  let even = [];
+  let total = 0;
+  for (let num of numbers) {
+    if (num % 2 === 0) {
+      even.push(num);
+      total += num;
+    }
+  }
+  const length = even.length;
+  let avg = total / length;
+  return avg;
+};
+
+// console.log(evenAvg([1, 3, 5, 4, 2, 6]));
+
+// Remove dublicates from an array
+function removeDublicates(arr) {
+  let uniqueArr = [];
+  // console.log(arr);
+  for (let items of arr) {
+    if (!uniqueArr.includes(items)) {
+      uniqueArr.push(items);
+    }
+  }
+  return uniqueArr;
+}
+// console.log(removeDublicates([1, 1, 3, 4, 2, 3]));
+
+// let x = 5;
+// let y = "name";
+// console.log(x, y);
+// [x, y] = [y, x];
+// console.log(typeof x);
+// console.log(x, y);
+
+// console.log(Math.pow(2, 3));
+for (var i = 0; i < 5; i++) {
+  setTimeout(function () {
+    // console.log(i);
+  }, 100);
+}
+
+// find the number how many times it is repeted in a array.
+
+const numbers2 = [5, 6, 11, 12, 98, 5];
+const checkRep = (numbers, target) => {
+  let result = 0;
+  for (let num of numbers) {
+    if (num === target) {
+      result++;
+    }
+  }
+  return result;
+};
+const repitation = checkRep(numbers2, 25);
+// console.log(repitation);
+
+// count the number of vowels in a string .
+const countVowels2 = (str) => {
+  let vowels = "aeiou";
+  let count = 0;
+  for (let char of str) {
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
+  return count;
+};
+// console.log(countVowels("this is a good practise"));
+
+let max = 100;
+let min = 10;
+const random = Math.floor(Math.random() * (max - min + 1)) + min;
+// console.log(random);
+
+// check a number is a prime number or not.
+const isPrime = (number) => {
+  if (number < 2) {
+    return `${number} isn't a prime number.`;
+  }
+
+  let factor = [];
+  for (let i = 1; i <= number; i++) {
+    if (number % i === 0) {
+      factor.push(i);
+    }
+  }
+  if (factor.length === 2) {
+    return `${number} is a prime number.`;
+  }
+  return `${number} is not a prime number.`;
+};
+
+// const check = isPrime(1000001);
+// console.log(check);
+
+// Find the factorial of a number
+const factorial = (num) => {
+  let output = 1;
+  for (let i = 2; i <= num; i++) {
+    output *= i;
+  }
+  return output;
+};
+// factorial(4);
+
+// check if a number is plaindorem or not
+const checkPlaidrome = (num) => {
+  return num.toString().split("").reverse().join("") === num.toString();
+};
+// console.log(checkPlaidrome(515));
+
+// Problems to solve.
+// Find the Greatest Common Divisor (GCD) of two numbers
+// 📌 Input: 12, 18 → Output: 6
+
+// Find the Least Common Multiple (LCM) of two numbers
+// 📌 Input: 4, 6 → Output: 12;
+
+// Generate the Fibonacci sequence up to n terms
+// 📌 Input: 5 → Output: [0, 1, 1, 2, 3]
+
+// string based problems.
+// Find the most frequent character in a string
+const findCommon = (str) => {
+  let test = {};
+  let maxCount = 0;
+  let maxChar = "";
+  for (let char of str) {
+    test[char] = (test[char] || 0) + 1;
+    if (test[char] > maxCount) {
+      maxChar = char;
+      maxCount = test[char];
+    }
+  }
+  return `${maxChar} is in the ${typeof str} ${maxCount}times`;
+};
+// console.log(findCommon("banana"));
+
+// Find the first non-repeating character in a string.
+const find1stNonRepeatingChar = (str) => {
+  let obj = {};
+  let firstUnickChar = "";
+  for (let char of str) {
+    obj[char] = (obj[char] || 0) + 1;
+  }
+  for (const key in obj) {
+    if (obj[key] === 1) {
+      firstUnickChar = key;
+      break;
+    }
+  }
+
+  return firstUnickChar;
+};
+// console.log(find1stNonRepeatingChar("swiss"));
+
+// Remove duplicate characters from a string
+const removeDublicates2 = (str) => {
+  let uniqueArr = [];
+  const arr = str.split("");
+  for (let items of arr) {
+    if (!uniqueArr.includes(items)) {
+      uniqueArr.push(items);
+    }
+  }
+  return uniqueArr.join("");
+};
+// console.log(removeDublicates2("banana"));
+const findMinMax = (arr) => {
+  const max = Math.max(...arr);
+  const min = Math.min(...arr);
+  return `max: ${max} min: ${min}`;
+};
+const result = findMinMax([1, 2, 4, 2, 65, 22]);
+// console.log(result);
+
+// check if a triangle is valid or not.
+const checkTriangle = (a, b, c) => {
+  const tester = a + b + c === 180;
+  if (tester) {
+    return `It is a valid triangle.`;
+  }
+  return `It is not a valid triangle.`;
+};
+// console.log(checkTriangle(60, 90, 60));
+
+// find the missing number form an array.
+// Problem: Given an array of numbers from 1 to n, but one number is missing, find the missing number.
+const missingNum = (arr) => {
+  let total = 0;
+  let expectedSum = (6 * (6 + 1)) / 2;
+  for (let num of arr) {
+    total += num;
+  }
+  const distance = expectedSum - total;
+  return distance;
+};
+// console.log(missingNum([1, 3, 4, 5, 6]));
+
+// Problem: Given an array and a target number, find all pairs that add up to the target.
+
+const findPair = (numbers, target) => {
+  const result = [];
+  for (let num = 0; num < numbers.length; num++) {
+    for (let n = num + 1; n < numbers.length; n++) {
+      if (numbers[num] + numbers[n] === target) {
+        let pairs = [numbers[num], numbers[n]];
+
+        result.push(pairs);
+      }
+    }
+  }
+  return result;
+};
+// console.log(findPair([1, 3, 5, 4, 6, 7], 10));
+// const arr = [1, 2, 3];
+// arr.push(4, 6);
+// console.log(arr);
+
+//🔹 Problem: Given an array, move all zeros to the end while maintaining the order of non-zero elements.
+// Input: ;
+// Output: [1, 3, 12, 0, 0];
+const addZeroLast = (numbers) => {
+  let result = [];
+  for (let num of numbers) {
+    if (num !== 0) {
+      result.push(num);
+    }
+  }
+  for (let num of numbers) {
+    if (num === 0) {
+      result.push(num);
+    }
+  }
+  return result;
+};
+// console.log(addZeroLast([0, 1, 0, 3, 12]));
+
+const moveZerosToEnd = (arr) => {
+  let index = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== 0) {
+      [arr[i], arr[index]] = [arr[index], arr[i]];
+      index++;
+    }
+  }
+  return arr;
+};
+
+// Test Case
+console.log(moveZerosToEnd([0, 1, 0, 3, 12])); // Output: [1, 3, 12, 0, 0]
+// console.log(moveZerosToEnd([0, 0, 1, 2, 0, 4, 5])); // Output: [1, 2, 4, 5, 0, 0, 0]
