@@ -45,3 +45,23 @@ function init() {
   displayName();
 }
 init();
+
+var name = "musfiqur";
+// name[0] = "f";
+name = "saikot";
+console.log(name);
+
+function printNumber(num) {
+  let result = "";
+  if (typeof num !== "number" || num <= 0) {
+    return `Invalid input should be greater then 0`;
+  }
+  for (let i = 0; i <= num; i++) {
+    result = result + i;
+    if (i < num) {
+      result += " ";
+    }
+  }
+  return result;
+}
+console.log(printNumber(5));

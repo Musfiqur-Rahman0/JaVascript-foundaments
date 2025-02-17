@@ -99,14 +99,13 @@ function secondLargest(arr) {
   // console.log(largest);
   for (let num of arr) {
     if (num > largest) {
-      second = largest;
-      largest = num;
+      // second = largest;
+      // largest = num;
+      [second, largest] = [largest, num];
     } else if (num > second && num !== largest) {
       second = num;
     }
   }
-  // console.log(second);
-
   return second;
 }
 
